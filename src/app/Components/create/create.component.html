@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="list-group">
+        <h1>CREATE CONSUMER</h1>
+        <div class="list-group-item">
+            <p>
+                <label>EMAIL</label>
+                <input [(ngModel)]="consumerEmail" class="form-control">
+            </p>
+        </div>
+        <div class="list-group-item">
+            <p>
+                <label>USERNAME</label>
+                <input [(ngModel)]="consumerUsername" class="form-control">
+            </p>
+        </div>
+        <div class="list-group-item">
+            <p>
+                <label>PHONE NUMBER</label>
+                <input [(ngModel)]="consumerPhoneNumber" class="form-control">
+            </p>
+        </div>
+        <button (click)='saveConsumer()' class="btn btn-success mt-4 ">SAVE</button>
+    </div>
+</div>
+

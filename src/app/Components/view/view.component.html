@@ -1,0 +1,35 @@
+<div class="container mt-4">
+    <div class="list-group" *ngIf="viewingConsumer">
+        <h2>VIEW CONSUMER INFO</h2>
+        <div class="list-group-item">
+            <p>
+            <label>EMAIL: </label>
+            {{viewingConsumer.email}}</p>
+        </div>
+        <div class="list-group-item">
+            <p>
+            <label>CREATED ON: </label>
+            {{viewingConsumer.createdAt.toLocaleDateString()}}</p>
+        </div>
+        <div class="list-group-item">
+            <p>
+            <label>USERNAME: </label>
+            {{viewingConsumer.username}}</p>
+        </div>
+        <div class="list-group-item">
+            <p>
+            <label>PHONE NUMBER: </label>
+            {{viewingConsumer.phoneNumber}}</p>
+        </div>
+        <div class="list-group-item">
+            <p>
+            <label>ID: </label>
+            {{viewingConsumer.id}}</p>
+        </div>
+    </div>
+    <div class="container">
+        <h1><b>SEARCH FOR CONSUMER</b></h1>
+        <input [(ngModel)]="toSearchConsumerEmail" placeholder="Consumer Email" name="searchEmail" class="form-control">
+        <button (click)='searchConsumer()' class="btn btn-primary mt-3 ">Search</button>
+    </div>
+</div>

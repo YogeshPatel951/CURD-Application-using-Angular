@@ -1,0 +1,30 @@
+<div class="container mt-4">
+    <div class="list-group mb-5" *ngIf="editingConsumer">
+        <h2>EDIT CONSUMER</h2>
+        <div class="list-group-item">
+            <p>
+                <label>EMAIL</label>
+                <input [(ngModel)]="editingConsumer.email" class="form-control">
+            </p>
+        </div>
+        <div class="list-group-item">
+            <p>
+                <label>USERNAME</label>
+                <input [(ngModel)]="editingConsumer.username" class="form-control">
+            </p>
+        </div>
+        <div class="list-group-item">
+            <p>
+                <label>PHONE NUMBER</label>
+                <input [(ngModel)]="editingConsumer.phoneNumber" class="form-control">
+            </p>
+        </div>
+        <button (click)='saveConsumer()' class="btn btn-success mt-4 ">UPDATE</button>
+    </div>
+
+    <div class="container">
+        <h1><b>SEARCH FOR CONSUMER TO EDIT</b></h1>
+        <input [(ngModel)]="toSearchConsumerEmail" placeholder="Consumer Email" name="searchEmail" class="form-control">
+        <button (click)='searchConsumer()' class="btn btn-primary mt-3 ">Search</button>
+    </div>
+</div>

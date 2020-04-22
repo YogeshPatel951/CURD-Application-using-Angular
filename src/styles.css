@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.cardView{
+    border: 1px solid black;
+}
+
+.nav-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:20px;
+}
+
+label{
+    font-weight: bold;
+}
+
+

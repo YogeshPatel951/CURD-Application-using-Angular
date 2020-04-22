@@ -1,0 +1,36 @@
+<div class="container mt-4">
+    <div class="list-group mb-5"*ngIf="DeleteConsumer">
+        <h2>DELETE CONSUMER</h2>
+        <div class="list-group-item">
+            <p>
+            <label>EMAIL: </label>
+            {{DeleteConsumer.email}}</p>
+        </div>
+        <div class="list-group-item">
+            <p>
+            <label>CREATED AT: </label>
+            {{DeleteConsumer.createdAt.toLocaleDateString()}}</p>
+        </div>
+        <div class="list-group-item">
+            <p>
+            <label>USERNAME: </label>
+            {{DeleteConsumer.username}}</p>
+        </div>
+        <div class="list-group-item">
+            <p>
+            <label>PHONE NUMBER</label>
+            {{DeleteConsumer.phoneNumber}}</p>
+        </div>
+        <div class="list-group-item">
+            <p>
+            <label>ID: </label>
+            {{DeleteConsumer.id}}</p>
+        </div>
+        <button (click)='deleteConsumer()' class="btn btn-danger mt-4 ">DELETE</button>
+    </div>
+    <div class="container">
+        <h1><b>SEARCH FOR CONSUMER</b></h1>
+        <input [(ngModel)]="toSearchConsumerEmail" placeholder="Consumer Email" name="searchEmail" class="form-control">
+        <button (click)='searchConsumer()' class="btn btn-primary mt-3">SEARCH</button>
+    </div>
+</div>
